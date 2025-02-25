@@ -60,6 +60,7 @@ refs.form.addEventListener('submit', async (event) => {
     hideLoader();
 
     if (hits.length === 0) {
+      renderGallery([], true); 
       iziToast.info({
         title: 'Oops!',
         message:
